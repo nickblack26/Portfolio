@@ -1,5 +1,5 @@
 import { Icons } from '@/components/icons';
-import { CodeIcon, HomeIcon, MailIcon, NotebookIcon, PencilLine } from 'lucide-react';
+import { CodeIcon, HomeIcon, MailIcon } from 'lucide-react';
 
 export const DATA = {
 	name: 'Nick Black',
@@ -9,14 +9,25 @@ export const DATA = {
 	locationLink: 'https://www.google.com/maps/place/dallas',
 	description: 'Full Stack Developer in Dallas, TX. I love building things and helping people.',
 	summary:
-		'Highly experienced web developer with demonstrated success in delivering creative and user-oriented digital solutions for executive leaders. Over 5 years of experience working alongside stakeholders to build responsive websites. Driven by passion for crafting exceptional, unique user experiences.',
+		'Highly experienced web developer with demonstrated success in delivering creative and user-oriented digital solutions for executive leaders. Over 5 years of experience working alongside stakeholders to build responsive web applications. Driven by passion for crafting exceptional, unique user experiences.',
 	avatarUrl: '/me.jpg',
-	skills: ['React', 'Next.js', 'Typescript', 'Node.js', 'PostgreSQL', 'MongoDB', 'TailwindCSS', 'GraphQL'],
+	skills: [
+		'React',
+		'Next.js',
+		'Typescript',
+		'Node.js',
+		'PostgreSQL',
+		'MongoDB',
+		'TailwindCSS',
+		'Radix UI',
+		'Shadcn UI',
+		'GraphQL',
+	],
 	navbar: [
 		{ href: '/', icon: HomeIcon, label: 'Home' },
 		// { href: '/blog', icon: NotebookIcon, label: 'Blog' },
 		{ href: '/#projects', icon: CodeIcon, label: 'Projects' },
-		{ href: '/', icon: MailIcon, label: 'Contact' },
+		{ href: '/#contact', icon: MailIcon, label: 'Contact' },
 		// { href: '#', icon: PencilLine, label: 'Notes' },
 	],
 	contact: {
@@ -27,14 +38,12 @@ export const DATA = {
 				name: 'GitHub',
 				url: 'https://github.com/nickblack26',
 				icon: Icons.github,
-
 				navbar: true,
 			},
 			LinkedIn: {
 				name: 'LinkedIn',
-				url: 'www.linkedin.com/in/nick-black-dev',
+				url: 'https://linkedin.com/in/nick-black-dev',
 				icon: Icons.linkedin,
-
 				navbar: true,
 			},
 			email: {
@@ -56,7 +65,7 @@ export const DATA = {
 			start: 'April 2023',
 			end: 'Present',
 			description:
-				'Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.',
+				'Led the development of a full stack proposal tool with unique integration to the company’s product database, including creating the underlying PostgreSQL database and UI for Velo IT Group. Developed call center software utilizing React for dynamic front-end interfaces, Twilio for seamless cloud communication integration, and Supabase for robust data management. Ensured timely delivery of scalable web solutions through cross-functional collaboration and ongoing consultation to executive leadership. Conducted department-wide and individual training sessions on best practices for new software tools. Transformed conceptual ideas into fully functional products, from initial design to deployment.',
 		},
 		{
 			company: 'Deep Space Robots',
@@ -68,7 +77,7 @@ export const DATA = {
 			start: 'April 2022',
 			end: 'August 2023',
 			description:
-				'Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.',
+				'Designed, developed, and optimized six front-end and back-end applications using Vue, React, Node, and TypeScript. Planned, tracked, and managed deliverables on bi-weekly short-term sprints. Led the development of a CRM project, including creating and managing development plans, client relationships, and expectations. Developed front-end and back-end features from initial concept to completion, including database design, coding, debugging, and testing. Created an offline local SQLite database that synced with the cloud database upon establishing an internet connection.',
 		},
 		{
 			company: 'Fellowship Church',
@@ -76,11 +85,12 @@ export const DATA = {
 			badges: [],
 			location: 'Dallas, TX',
 			title: 'Software Engineer',
-			logoUrl: '/fc.svg',
+			logoUrl: '/fc-logo.svg',
 			start: 'September 2019',
 			end: 'April 2022',
+			classOverrides: 'bg-black text-white fill-white p-2.5',
 			description:
-				'Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.',
+				'Designed and developed the Fellowship Church website, integrating Planning Center Events. Managed 18 individual websites hosted on AWS. Worked with the graphic design team to build multiple user interfaces with an emphasis on mobile device design. Collaborated with project leads, product managers, and other software developers to build new web applications.',
 		},
 	],
 	education: [
