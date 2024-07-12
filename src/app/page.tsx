@@ -72,6 +72,8 @@ export default function Page() {
 								subtitle={work.title}
 								href={work.href}
 								badges={work.badges}
+								// @ts-ignore
+								classOverrides={work.classOverrides}
 								period={`${work.start} - ${work.end ?? 'Present'}`}
 								description={work.description}
 							/>
